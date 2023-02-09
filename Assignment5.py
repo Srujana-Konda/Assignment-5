@@ -62,4 +62,4 @@ target_pred = svm_model.predict(features_test)
 # Evaluate the model's performance
 print("Accuracy: ", accuracy_score(target_test, target_pred))
 print("Support Vector Machine Confusion Matrix:\n", confusion_matrix(target_test, target_pred))
-print("Classification Report: \n", classification_report(target_test, target_pred))
+print("Classification Report: \n", classification_report(target_test, target_pred, zero_division=True))
